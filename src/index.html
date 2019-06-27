@@ -19,29 +19,28 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">       
-        <h1 class="text-center">클레이튼(Klaytn) page</h1>
-        <h3 class="text-center">Klaytn</h1>
+        <img src="http://ww4.sinaimg.cn/large/006tNc79gy1g4gcmyvnf8j31ee064q3b.jpg" width=100%>
         <h3 class="text-center">
-          <code>Deposit or Receive</code>  
           <button type="button" 
                   class="btn btn-info pull-right" 
                   id="login" 
                   data-toggle="modal"
                   data-target="#loginModal">
-                  로그인
+                  로그인(Klaytn)
           </button>
           <button type="button" 
                   class="btn btn-info pull-right" 
                   id="logout" 
                   style="display: none;"
                   onclick="App.handleLogout()">
-                  로그아웃
+                  로그아웃(Klaytn)
           </button>
         </h3>         
         <div class="text-center" id="address"></div>   
         <div class="text-center" id="contractBalance"></div> 
         <hr /> 
       </div>
+      <img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4gcmz5rzoj31d90mi3zi.jpg" width=100%>
     </div>
 
     <br />     
@@ -49,7 +48,7 @@
     <div class="row text-center">
       <div id="game" style="display: none;">
       <span class="input-group-btn">
-          <button type="button" class="btn btn-default" onclick="App.receiveKlay()">Receive KLAY</button>
+          <button type="button" class="btn btn-default" onclick="App.receiveKlay()">Submit&Receive KLAY</button>
       </span>
       </div>
   </div>    
@@ -67,11 +66,11 @@
     <div class="row text-center">
       <div class="col-md-2 col-md-offset-5">
         <div id="owner" style="display: none;">        
-          <label>Deposit Klay</label>
+          <label>Donate Klay</label>
           <div class="input-group">             
             <input type="number" class="form-control" id="amount" />
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default" onclick="App.deposit()">송금</button>
+              <button type="button" class="btn btn-default" onclick="App.deposit()">Donation</button>
             </span>
           </div>
         </div>

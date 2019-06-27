@@ -176,8 +176,8 @@ const App = {
     $("#login").hide(); 
     $('#logout').show();
     $('#game').show();
-    $('#address').append('<br>' + '<p>' + '내 계정 주소: ' + walletInstance.address + '</p>');   
-    $('#contractBalance').append('<p>' + '이벤트 잔액: ' + cav.utils.fromPeb(await this.callContractBalance(), "KLAY") + ' KLAY' + '</p>');     
+    $('#address').append('<br>' + '<p>' + '내 계정 주소(Klaytn): ' + walletInstance.address + '</p>');   
+    $('#contractBalance').append('<p>' + 'Jokjebi의 Klaytn: ' + cav.utils.fromPeb(await this.callContractBalance(), "KLAY") + ' KLAY' + '</p>');     
 
     if (await this.callOwner() !== walletInstance.address) {
       $("#owner").show(); 
