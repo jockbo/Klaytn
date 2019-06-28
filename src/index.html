@@ -38,9 +38,47 @@
         </h3>         
         <div class="text-center" id="address"></div>   
         <div class="text-center" id="contractBalance"></div> 
-        <hr /> 
       </div>
-      <img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4gcmz5rzoj31d90mi3zi.jpg" width=100%>
+      <div style="padding: 200px 200px 5px 225px">
+          <span style="padding-right:20px">
+              <label style="padding-right:20px;font-size:1em"for="male">과목
+                  <input style= "width:250px; height:25px;" type="text" class="form-control" id="amount" >
+              </label>
+              
+          </span>
+          <span>
+              <label style="padding-right:20px;font-size:1em"for="male">교수
+              <input style= "width:250px; height:25px;" type="text" class="form-control" id="amount" >
+            </label>
+          </span>
+      </div>
+      <div style="padding: 5px 20px 20px 225px">
+          <span style="padding-right:20px;">
+               <label style="padding-right:20px;font-size:1em"for="male">연도
+               <input style= "width:150px; height:25px;" type="text" class="form-control" id="amount" >
+              </label>
+          </span>
+         <span style="padding-right:40px">
+              <label style="padding-right:20px;font-size:1em"for="male">학기
+              <input style= "width:150px; height:25px;" type="text" class="form-control" id="amount" >
+            </label>
+         </span>
+          <span>
+               <label style="padding-right:20px;font-size:1em"for="male">분류
+               <input style= "width:150px; height:25px;" type="text" class="form-control" id="amount" >
+              </label>
+          </span>
+      </div>
+      <div style="padding: 5px 20px 20px 225px">
+          <label style="padding-right:20px;font-size:1em" for="male">파일</label>
+          <input type="file" ref="file" v-on:change="handleFileUpload">
+      </div>
+      <div style="text-align:center">
+          <div>
+              <textarea style="height:300px; width:700px; background:white" v-model="explain">코멘트를 작성하세요</textarea>
+          </div>
+      </div>
+      <!-- <img src="http://ww3.sinaimg.cn/large/006tNc79gy1g4gcmz5rzoj31d90mi3zi.jpg" width=100%> -->
     </div>
 
     <br />     
